@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "address": "saaaa",
+        "distance": "1000m"
+    },
+    {
+        "id": 2,
+        "address": "rrrrrrrr",
+        "distance": "5000m"
+    }
+]
