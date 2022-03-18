@@ -21,12 +21,12 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('../views/aboutView.vue'),
   },
   {
-    path: '/coreNetwork',
-    name: 'coreNetwork',
+    path: '/network',
+    name: 'network',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import('../views/coreNetworkView.vue'),
+    component: () => import('../views/networkView.vue'),
   },
   {
     path: '/dataDownload',

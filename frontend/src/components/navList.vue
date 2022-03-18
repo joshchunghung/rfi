@@ -3,7 +3,7 @@
     <div class="col-lg-3 col-md-12">
       <ul class="nav flex-column">
         <li v-for="(page, index) in pageItem" :key="index" class="nav-item">
-          <router-link :to="'/' + page">{{ page }}</router-link>
+          <router-link :to="'/' + page">{{ page.toUpperCase() }}</router-link>
         </li>
       </ul>
     </div>
@@ -15,18 +15,18 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
-  name: "navList",
+  name: 'navList',
   setup() {
     const pageItem = ref([
-      "home",
-      "about",
-      "coreNetwork",
-      "building",
-      "dataDownload",
-      "team",
+      'home',
+      'about',
+      'network',
+      'building',
+      'dataDownload',
+      'team',
     ]);
 
     return {
@@ -49,5 +49,21 @@ ul {
       color: #42b983;
     }
   }
+}
+.nav {
+  margin-bottom: 15px;
+}
+.nav-item {
+  color: #333;
+  font-size: 0.9em;
+  text-decoration: none;
+  line-height: 190%;
+  display: block;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #cccccc;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-weight: 100;
 }
 </style>
